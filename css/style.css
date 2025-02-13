@@ -10,6 +10,20 @@
     --color-bg3: #FCDFCF;
     --text-main: #495057;
     --text-color: #212529;
+    --bg-image: url('../img/index_bg_light.jpeg');
+    --icon: url(../img/icon_moon.png);
+}
+[data-theme="dark"] {
+    --black: #fff;
+    --white: #333;
+    --color-main: #f0ebd8;
+    --color-bg: #000;
+    --color-bg2: #000;
+    --color-bg3: #d6d6d6;
+    --text-main: #f5f5f5;
+    --text-color: #fff;
+    --bg-image: url('../img/index_bg_dark.jpg');
+    --icon: url(../img/icon_sun.png);
 }
 
 html,body,h1,h2,h3,h4,h5,p,div,span,img,ul,ol,li,header,main,footer,nav,section,a,strong,form,input,button,select,option {
@@ -57,6 +71,7 @@ button {
 }
 #wrap{
     width: 100%;
+    position: relative;
 }
 .main_tit{
     font-family: p700;
@@ -86,7 +101,18 @@ button {
     letter-spacing: 0.1rem;
     line-height: 2;
 }
-
+#theme-toggle{
+    background: var(--icon) no-repeat center / cover;
+    object-fit: cover;
+    position: fixed;
+    top: 5rem;
+    left: 1rem;
+    color: var(--bg-color);
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
 /* header */
 #header{
     right:3rem;
@@ -181,7 +207,7 @@ button {
 /* index */
 #contents > div:first-child{
     height: 100vh;
-    background: url(../img/index_bg.jpeg) no-repeat center center /  cover;
+    background: var(--bg-image) no-repeat center center /  cover;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -340,6 +366,7 @@ button {
 #about .resume_wrap .licen li
 {
     font-size: 1.3rem;
+    color: var(--text-color);
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -363,7 +390,7 @@ button {
     font-size: 1.2rem;
     line-height: 5rem;
     text-align: center;
-    color: var(--text-main);
+    color: var(--white);
 }
 
 /* web*/
@@ -495,6 +522,7 @@ button {
 .popup-content h2{
     font-size: 2rem;
     margin-bottom: 2rem;
+    color: var(--text-color);
 }
 .popup-content a{
     display: inline-block;
@@ -502,6 +530,7 @@ button {
     padding: 1rem;
     font-size: 1.5rem;
     border-radius: 5rem;
+    color: var(--text-color);
 }
 .popup-content img{
     width: 100%;
@@ -537,6 +566,7 @@ button {
 #contact .contact_li span{
     font-size: 2rem;
     line-height: 5rem;
+    color: var(--text-color);
 }
 
 /* footer */
