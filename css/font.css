@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* 프린텐다드 웹폰트 로딩 */
+@font-face {
+    font-family: 'p400';
+    src: url(../font/Pretendard-Regular.woff2) format('woff2'), url(../font/Pretendard-Regular.woff) format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'p500';
+    src: url(../font/Pretendard-Medium.woff2) format('woff2'), url(../font/Pretendard-Medium.woff) format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'p700';
+    src: url(../font/Pretendard-Bold.woff2) format('woff2'), url(../font/Pretendard-Bold.woff) format('woff');
+    font-weight: 700;
+}
