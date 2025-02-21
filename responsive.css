@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* break point 1024px 이하일때 */
+@media (max-width: 1024px) {
+    .inner{
+        padding: 3rem;
+    }
+    #design .design_box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* break point : 1000 */
+@media (max-width: 1000px){
+    #contact .contact_li > div{
+        padding: 1rem;
+    }
+    #contact .contact_li img{
+        width:4rem;
+        height:4rem;
+    }
+    #contact .contact_li span{
+        font-size: 1.8rem;
+        line-height: 4rem;
+    }
+}
+
+/* break point 768px 이하일때 */
+@media (max-width: 768px) {
+    #design .design_box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #contact .inner{
+        display: block;
+    }
+    #contact .inner .main_text{
+        margin-bottom: 1rem;
+    }
+    .main_tit{
+        font-size: 3rem;
+        padding: 5rem;
+    }
+}
+
+/* break point : 600 */
+@media (max-width: 600px) {
+    #header{
+        width: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        display: flex;
+    }
+    #header .logo{
+        margin-right: auto;
+    }
+    #header .logo a img{
+        width: 5rem;
+        height: 5rem;
+    }
+    #header .logo span{
+        font-size: 1.4rem;
+    }
+    #header .header_nav{
+        justify-content: flex-end;
+        align-items: center;
+        display: flex;
+        margin-right: 0.2rem;
+    }
+    #header .header_nav ul{
+        display: flex;
+    }
+    #header .header_nav ul li a{
+        font-size: 1.2rem;
+        padding: 0;
+    }
+    #header .header_nav ul li a::before{
+        height: 0.1rem;
+    }
+    #index h2{
+        font-size: 3.4722vw;
+    }
+    #about .profile_box img{
+        width: 30rem;
+        height: 35rem;
+    }
+    #about .main_text .main_text1{
+        font-size: 2.2rem;
+    }
+    #about .main_text .main_text2{
+        font-size: 1.7rem;
+    }
+    #design .design_box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* break point : 500 */
+@media (max-width: 500px) {
+    #header .logo span{
+        display: none;
+    }
+    #header .header_nav ul li a{
+        font-size: 1rem;
+    }
+    .main_text{
+        font-size: 1.8rem;
+    }
+}
+/* break point : 375 */
+@media (max-width: 375px) {
+    .main_tit{
+        font-size: 2rem;
+    }
+    #about .profile_box img{
+        width: 20rem;
+        height: 25rem;
+    }
+}
+/* break point : 320 */
+@media (max-width: 320px) {
+    #header .logo{
+        display: none;
+    }
+}

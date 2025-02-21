@@ -105,8 +105,8 @@ button {
     background: var(--icon) no-repeat center / cover;
     object-fit: cover;
     position: fixed;
-    top: 5rem;
-    left: 1rem;
+    top: 10rem;
+    left: 2rem;
     color: var(--bg-color);
     border: none;
     padding: 0.8rem;
@@ -119,6 +119,7 @@ button {
     top:3rem;
     background: transparent;
     border-radius: 2rem;
+    padding: 1rem;
     position: fixed;
     z-index: 9;
     transition: background-color 0.3s ease-in-out, border-bottom-color 0.7s ease-in-out;
@@ -228,7 +229,6 @@ button {
 #index h2 span:nth-child(2) {
     animation-delay: 0.4s;
 }
-
 @keyframes reveal {
     0% {
         transform: translateY(100%);
